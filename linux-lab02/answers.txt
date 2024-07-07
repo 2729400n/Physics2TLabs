@@ -1,0 +1,120 @@
+--------------------------------------------------------------------------------
+    LAB 02                                       Advanced Command Line Usage    
+--------------------------------------------------------------------------------
+
+    Answer all questions for Lab02 in this file.
+
+
+--------------------------------------------------------------------------------
+    QUESTIONS - Managing Processes
+--------------------------------------------------------------------------------
+
+------------------
+    QUESTION 1
+------------------
+
+A)	3.24, 3.48, 3.71								[1]  
+
+B) 841 total                        [1]
+
+C) top (-U|-u) ($USER | $UID) ; -- This means u can use either -u or -U 
+and the environment variable USER or UID		[1]
+
+
+------------------
+    QUESTION 2 
+------------------
+It executes the preceding command in the background 
+(nbormally still attached top the tty or vt device) the background
+proccess pid is printed with its job number and its made into a job [1]
+
+
+------------------
+    QUESTION 3 
+------------------
+top and ps numbers differ for many reasons.
+top on its own lists the processes managed by the kernel whereas ps 
+lists user processes that are owned by the user and have a tty assigned 
+to them and some other contraints. This means the number of processes listed by top will be more than ps. 
+(top is also a realtime process monitor so the display changes and updates the details.) [3]
+
+
+
+--------------------------------------------------------------------------------
+    QUESTIONS - Variables and the Path Variable
+--------------------------------------------------------------------------------
+
+------------------
+    QUESTION 4 
+------------------
+Each entriy in the path variable is checked for an executable when an executable is top be run[2]
+
+    
+------------------
+    QUESTION 5 
+------------------
+
+A=Apple
+B=Ball
+C=Cat
+
+A) Apple								[1]
+
+B) AppleBall							[1]
+
+C) AppleB	                			[1]
+	
+D)  Catat   							[1]
+
+E)  Catat   							[1]
+
+F)  Apple Ball Cat						[1]
+
+G)  $A $B $C							[1]
+
+H)  $A									[1]
+
+
+--------------------------------------------------------------------------------
+    QUESTIONS - Pipes and Redirection 
+--------------------------------------------------------------------------------
+    
+------------------
+    QUESTION 6 
+------------------
+the uniq command only coalesce adjacent lines in the input file		[1]
+    
+------------------
+    QUESTION 7 
+------------------
+
+A) matches an expression pattern against a list oif files specified if no files are specified it reads from standard input							[1]
+
+B) grep -E "\sChapter\s" ~/linux-lab02/extras/Bash-Beginners-Guide.txt	[1]
+
+    
+------------------
+    QUESTION 8 
+------------------
+sorts the bash history file contents based on ascii values then filters it through uniq which filters adjacent lines and gets unique adjacent lines it also prepends the occurence of each value in each unique value new line which the number of matching lines that where eliminted to make it unique plus 1.
+then sorts the lines by the number of occurences in ascending order then gpipes to tail to get the 10 most used commands. 									[6]
+   
+    
+-------------------
+    QUESTION 9 
+-------------------
+> : is a truncate file and write so all the contents of the file given after > are truncated then the file is written to (overwrite).
+
+>> : is append it appends to the end of a given file this is like the append behavior of open 									[2]
+
+
+-------------------
+    QUESTION 10
+-------------------
+expr $(ps | wc --lines) - 2 // becasue there seems to
+be two extra lines dunno why should be one maybe a hidden one						[2]
+   
+
+--------------------------------------------------------------------------------
+    FINISHED LAB 02                                             MARKS: XX/30    
+--------------------------------------------------------------------------------

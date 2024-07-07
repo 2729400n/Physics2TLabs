@@ -1,0 +1,72 @@
+--------------------------------------------------------------------------------
+    LAB 03                                                      BASH SCRIPTING
+--------------------------------------------------------------------------------
+
+    Answer the questions for Lab 3 in this file.  Provide solutions for the
+    scripting tasks in files named Task<N>.sh as described in the lab script.
+
+    Submit a single archive (Tar, compressed Tar or Zip) containing this file
+    along with your .sh files.
+
+--------------------------------------------------------------------------------
+    QUESTIONS
+--------------------------------------------------------------------------------
+
+------------------
+    QUESTION 1 
+------------------
+A shebang					[1]
+
+------------------
+    QUESTION 2 
+------------------
+
+it calls cat and sets stdin to the contents of the file so the program reads the text as stdin 
+hence cat will print it out it like  `cat` where stdin = the file content pipe/ copy      	[2]
+
+------------------
+    QUESTION 3 
+------------------
+
+The shebang is not on the top									[1]
+
+------------------
+    TASK 1 
+------------------
+
+Provide a Task1.sh							[4]
+
+------------------
+    TASK 2 
+------------------
+
+Provide a Task2.sh							[5]
+
+------------------
+    TASK 3 
+------------------
+
+Provide a Task3.sh							[5]
+
+------------------
+    TASK 4 
+------------------
+
+Provide a Task4.sh							[8]
+
+------------------
+    TASK 5 
+------------------
+
+Provide a Task5.sh							[9]
+
+------------------
+    TASK 6 
+------------------
+
+Provide a Task6.sh							[10]
+
+
+--------------------------------------------------------------------------------
+    FINISHED LAB 03                                             MARKS: XX/45
+--------------------------------------------------------------------------------
